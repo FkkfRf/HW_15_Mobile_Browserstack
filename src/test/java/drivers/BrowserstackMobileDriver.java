@@ -1,7 +1,9 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
+import config.BrowserstackLoginConfig;
 import lombok.SneakyThrows;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
@@ -18,8 +20,9 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         mutableCapabilities.merge(capabilities);
 
         // Set your access credentials
-        mutableCapabilities.setCapability("browserstack.user", "hwqa_uomRki");
-        mutableCapabilities.setCapability("browserstack.key", "u1VhNMZ58D8FuosP4XxR");
+        BrowserstackLoginConfig loginConfig = ConfigFactory.create(BrowserstackLoginConfig.class);
+        mutableCapabilities.setCapability("browserstack.user", loginConfig.userName());
+        mutableCapabilities.setCapability("browserstack.key", loginConfig.password());
 
         // Set URL of the application under test
         mutableCapabilities.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");

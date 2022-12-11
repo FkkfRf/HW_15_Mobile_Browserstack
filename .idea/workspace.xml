@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01e63213-bc96-4049-b408-5789efb660c7" name="Changes" comment="allure">
+    <list default="true" id="01e63213-bc96-4049-b408-5789efb660c7" name="Changes" comment="owner?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Browserstack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/BaseTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/BrowserstackLoginConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/ProjectProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/drivers/BrowserstackMobileDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/drivers/BrowserstackMobileDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Browserstack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/Browserstack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/android/lesson/browserstack_sample/SelenideSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/android/lesson/browserstack_sample/SelenideSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +45,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/QA_Projects/HW_15_Mobile_Browserstack/src/test/java/helpers&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/QA_Projects/Test_LoyaltyLabs&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -48,11 +53,36 @@
       <recent name="tests" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\QA_Projects\HW_15_Mobile_Browserstack\src\test\resources" />
+      <recent name="C:\QA_Projects\HW_15_Mobile_Browserstack\src\test\java" />
       <recent name="C:\QA_Projects\HW_15_Mobile_Browserstack\src\test\java\helpers" />
       <recent name="C:\QA_Projects\HW_15_Mobile_Browserstack" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.SelenideSearchTest.successSearchTest">
+    <configuration name="SelenideSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.android.lesson.browserstack_sample.SelenideSearchTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="SelenideSearchTest.successSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -79,6 +109,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SelenideSearchTest.successSearchTest" />
+        <item itemvalue="Gradle.SelenideSearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670792794490</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="allure">
+      <created>1670792892152</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670792892152</updated>
+    </task>
+    <task id="LOCAL-00011" summary="owner?">
+      <created>1670794069528</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670794069528</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +216,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="readme" />
     <MESSAGE value="allure" />
-    <option name="LAST_COMMIT_MESSAGE" value="allure" />
+    <MESSAGE value="owner?" />
+    <option name="LAST_COMMIT_MESSAGE" value="owner?" />
   </component>
 </project>
