@@ -36,8 +36,9 @@ public class BaseTest {
 
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
-        //Attach.video();  //not working
         closeWebDriver();
+        Attach.addVideo(sessionId);  //not working
+
         // attach
 
     }
