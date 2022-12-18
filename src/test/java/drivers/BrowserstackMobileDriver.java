@@ -9,10 +9,18 @@ import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class BrowserstackMobileDriver implements WebDriverProvider {
 
+    public static URL getBrowserstackUrl(){
+        try {
+            return new URL("http://hub.browserstack.com/wd/hub");
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+    }
     @SneakyThrows
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
@@ -38,6 +46,6 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
 
         // Initialise the remote Webdriver using BrowserStack remote URL
         // and desired capabilities defined above
-        return new RemoteWebDriver(new URL("http://hub.browserstack.com/wd/hub"), mutableCapabilities);
+        return new RemoteWebDriver(getBrowserstackUrl(), mutableCapabilities);
     }
 }
